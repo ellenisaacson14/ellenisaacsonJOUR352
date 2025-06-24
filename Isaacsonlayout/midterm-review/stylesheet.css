@@ -1,0 +1,78 @@
+#content {
+    margin:0 auto; 
+    width:900px;
+}
+
+.masthead {
+  background-image: url('../midterm-review/images/images:masthead.png'); 
+  background-size: cover;
+  background-position: center 250px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gold;
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin: 0;
+  padding: 20px;
+    font-family: 'Georgia', serif;
+  text-align: center;
+}
+
+h1 {
+    margin: 0;
+  padding: 20px;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+
+#byline {
+font-family: Helvetica, sans-serif;
+font-size: 14px;
+font-style: italic;
+ text-align: center;
+    color: #666;
+    margin-top: -10px;
+}
+
+
+p {
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+    margin-top: 5px;
+}
+
+    blockquote {
+font: 16px/24px normal helvetica, sans-serif; 
+font-style: italic; 
+margin-top: 15px; 
+margin-bottom: 15px; 
+color: gold; 
+margin-left: 50px; 
+padding-left: 15px; 
+border-left: 4px solid #ccc; 
+}
