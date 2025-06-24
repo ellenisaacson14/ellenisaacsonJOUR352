@@ -19,7 +19,7 @@
 h2 {
   margin: 0;
   padding: 20px;
-    font-family: 'Georgia', serif;
+  font-family: 'Georgia, sans-serif';
   text-align: center;
 }
 
@@ -42,7 +42,7 @@ font-style: italic;
 
 
 p {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 13px;
     line-height: 1.5;
     text-align: center;
@@ -56,13 +56,15 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
+    padding: 20px;
 }
 
 figcaption {
     font-family: Helvetica, sans-serif;
     font-size: 12px;
     text-align: center;
-    color: #666;
+    color: red;
+    padding: 20px;
     margin-top: 5px;
 }
 
@@ -71,8 +73,14 @@ font: 16px/24px normal helvetica, sans-serif;
 font-style: italic; 
 margin-top: 15px; 
 margin-bottom: 15px; 
-color: gold; 
+color: red; 
 margin-left: 50px; 
 padding-left: 15px; 
 border-left: 4px solid #ccc; 
+}
+
+a { 
+  color: red; 
+  font-style: italic; 
+
 }
