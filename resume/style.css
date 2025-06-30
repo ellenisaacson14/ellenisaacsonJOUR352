@@ -1,118 +1,159 @@
-/* styles for my resume*/
+/* styles for my resume */
 
-BODY {
-  font-family: "Open Sans", arial, sans-serif;
-  font-size: 1em;
-  color:#444;
-  font-weight:400;
+/* Apply to all body text */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f9fa; /* light gray background */
+  color: #212529;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-#container {
-  width:100%;
-  max-width:1200px;
-  margin: 0 auto;
-  padding-bottom:50px;
+/* Make sure container isn't too narrow */
+.container {
+  max-width: 1200px;
 }
 
-/*name*/
-#name {
-  font-size:3em;
-  text-transform:uppercase;
-  text-align:center;
-  color:#33485e;
-  border-bottom: 1px solid #33485e;
-  width: 60%;
-  min-width:300px;
-  margin:0 auto;
+/* Left column styling: subtle background, padding, border-radius, shadow */
+.col-md-4 {
+  background-color: #f0f4f8;  /* soft light blue-gray */
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(51, 72, 94, 0.1); /* subtle shadow */
+  text-align: center;  /* center all content inside */
 }
 
-/*occupation*/
-#title {
-  color:#33485e;
-  text-transform:uppercase;
-  font-size: 1.5em;
+/* Profile image styling */
+.profile-image {
+  width: 180px;          /* fixed width for neatness */
+  height: 180px;         /* fixed height for square */
+  object-fit: cover;     /* crop to fill */
+  border-radius: 50%;    /* perfect circle */
+  border: 4px solid #33485e; /* thick border matching your color scheme */
+  box-shadow: 0 4px 10px rgba(51, 72, 94, 0.2);
+  margin: 20px auto 0 auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on profile image */
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(51, 72, 94, 0.35);
+}
+
+/* Centered name styling */
+.centered-name {
   text-align: center;
-  font-weight:600;
-  margin-top:20px;
-  margin-bottom:0px;
-  margin-right:0px;
-  margin-left:0px;
+  margin-bottom: 20px;
+  color: #1e2a38;
+  font-weight: 700;
 }
 
-.description {
-  text-align:center;
-  margin-top:10px;
-  margin-bottom:10px;
-  margin-right:0px;
-  margin-left:0px;
+/* Centered experience header */
+.centered-experience {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e2a38;
+  font-weight: 700;
 }
 
-/*section titles*/
-.sectionheader {
-  font-size:1.5em;
-  text-transform:uppercase;
+/* General heading styles */
+h2, h4 {
+  color: #1e2a38;
+  margin-bottom: 20px;
+}
+
+/* Bold and styled h5 headings */
+h5 {
   background-color: #33485e;
-  color:#fff;
-  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
   margin-top: 20px;
-  margin-left:0;
-  margin-right:0;
-  width:70%;
-  min-width:300px;
 }
 
-/* job titles*/
-.jobtitle {
-  font-weight:600;
-  font-size:1.5em;
+/* Section headers (like Experience, Education, Skills) */
+h4 {
+  border-bottom: 2px solid #33485e;
+  padding-bottom: 6px;
 }
 
-/*job organizations*/
-.organization {
-  font-weight:400;
-  font-size:1.25em;
+/* Intro paragraph styling */
+.intro {
+  text-align: center;
+  max-width: 280px;
+  margin: 20px auto 0 auto;
+  font-size: 1rem;
+  color: #2e3d4f;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
-/*dates*/
-.date {
-  font-weight:400;
-  font-size:1em;
+/* Contact links styling */
+.contact-links {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  margin-top: 15px;
 }
 
-.menu {
-  margin:0px;
-  padding:0px;
-  text-align:center;
+.contact-links li {
+  display: inline-block;
+  margin: 0 12px;
 }
 
-#degrees {
-  margin-top:5px;
-  margin-bottom:0px;
-  margin-right:0px;
-  margin-left:0px;
-
+.contact-links a {
+  color: #33485e;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 0.95rem;
 }
 
-#do {
-  margin-top:5px;
-  margin-bottom:0px;
-  margin-right:0px;
-  margin-left:0px;
+.contact-links a:hover {
+  color: #5577a1;
+  text-decoration: underline;
 }
 
-#title{
-  font-weight:600;
-  text-align:center;
-  margin-top:20px;
-  margin-bottom:0px;
-  margin-right:0px;
-  margin-left:0px;
+/* Links styling globally */
+a {
+  color: #33485e;
+  text-decoration: none;
 }
 
-.top{
-  width:60%;
-  min-width:300px;
-  margin:0 auto;
-  margin-bottom:30px;
+a:hover {
+  text-decoration: underline;
+}
 
+/* Lists (Contact and Skills) */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+/* Footer styling */
+footer, .site-footer {
+  background-color: #33485e;     /* dark background */
+  color: white;                  /* light text */
+  text-align: center;            /* center the text */
+  padding: 20px 0;               /* top and bottom padding */
+  font-size: 14px;               /* smaller font */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Optional spacing tweaks */
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
 }

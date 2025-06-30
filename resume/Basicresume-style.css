@@ -115,3 +115,9 @@ BODY {
   margin-bottom:30px;
 
 }
+
+
+.navbar a { 
+  color: white;
+  background-color: #33485e;
+}
