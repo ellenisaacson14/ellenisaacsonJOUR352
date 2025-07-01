@@ -1,180 +1,83 @@
 <!doctype html>
-
 <html lang="en">
 <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
- <title>Skate! Newsletter</title>
- <meta name="description" content="Merrill College of Journalism, UMD">
- <meta name="author" content="Adam Marton">
+  <title>Bootstrap Template</title>
+  <meta name="description" content="Merrill College of Journalism, UMD">
+  <meta name="author" content="Ellen Isaacson">
 
- <!-- Bootstrap CSS and JavaScript -->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-<style> 
-    .bi {
-    font-size:3em;
-  }
-
-  .col-md-4 {
-    text-align: center;
-
-</style>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous">
 
 
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Special+Elite&display=swap" rel="stylesheet">
-
-
-
-<style>
-
-    @media only screen and (max-width: 500px) {
-
-
-	INSERT STYLES HERE FOR SCREENS BELOW 500px
-}
-
-  h1 {
-    font-family: 'Special Elite', cursive;
-  }
-</style>
-
-<style>
- .navbar-brand {
-     font-family: 'Special Elite', cursive;   
-    }
-</style>
-
-
-<style>
- .btn {
-     font-family: 'Special Elite', cursive;   
-    }
-</style>
-
-<style>
-    h2 {
-    font-family: 'Special Elite', cursive;
-  }
-</style>
-
-<style>
-    h3 {
-    font-family: 'Special Elite', cursive;
-    }
-</style>    
-
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
+
 <body>
 
-<!--navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Skate! Newsletter</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">NavBar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Current issue</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Past issues</a>
+          <a class="nav-link" href="#">Links</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Follow us</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-      
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
   </div>
 </nav>
-
-<div class="container col-xxl-8 px-4 py-5"> 
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5"> 
-        <div class="col-10 col-sm-8 col-lg-6"> 
-            <img src="https://images.unsplash.com/photo-1564982752979-3f7bc974d29a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> 
-        </div> 
-        <div class="col-lg-6"> 
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">A Rundown of top new skateboard decks</h1> 
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start"> 
-                <button type="button" class="btn btn-dark btn-lg px-4 me-md-2">Read Now</button> 
-            </div> 
-        </div> 
-    </div> 
-</div> 
+<!-- End Navbar -->
 
 
 <div class="container">
-  <div class="row">
 
-    <div class="col-md-6 text-center">
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-      <img src="https://images.unsplash.com/photo-1572776685600-aca8c3456337?..." width="100%" style="max-width: 500px;" class="img-fluid mb-3">
-      <br>
-      <button type="button" class="btn btn-dark btn-lg px-4 me-md-2">Read Now</button>
-    </div>
-
-    <div class="col-md-6 text-center">
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
-      <img src="https://images.unsplash.com/photo-1621544402532-78c290378588?..." width="100%" style="max-width: 500px;" class="img-fluid mb-3">
-      <br>
-      <button type="button" class="btn btn-dark btn-lg px-4 me-md-2">Read Now</button>
-    </div>
-
-  </div>
-</div>
-
-
-    <br>
-    <br>
-
-    <div class="row">
-        <div class="col-md-4">
-            <i class="bi bi-book"></i>
-            <h3>Read</h3>
-            <p>Read stories from our archives</p>
-        
-        </div>
-        <div class="col-md-4">
-            <i class="bi bi-chat-left-dots"></i>
-            <h3>Contact</h3>
-            <p>Ask us a question </p>
-        </div>  
-            
-        <div class="col-md-4">
-             <i class="bi bi-heart"></i>
-            <h3>Follow</h3>
-            <p>Follow us on Facebook or Twitter </p>
-        </div>
-
-
-
+<p class="headline">Headline goes here</p>
+<p class="byline"> Byline goes here</p>
 
 
 </div>
 
- <footer class="footer mt-auto py-3 bg-dark">
-       <div class="container">
-         <span class="text-white">This is a bootstrap exercise</span>
-       </div>
-     </footer>
 
-
+<!--jQuery first, then Popper.js, then Bootstrap JS-->  
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvb[yZFJoft+2mJbHaEWldlvI9I0Yy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1Ljs/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj003uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCEx130g8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>
